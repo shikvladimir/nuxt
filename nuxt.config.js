@@ -8,4 +8,11 @@ export default defineNuxtConfig({
     /* Options */
   },
   css: ['primevue/resources/themes/lara-light-green/theme.css'],
+  nitro: {
+    output: {
+      dir: '.output',
+      serverDir: '.output/server',
+      publicDir: '.output/public'
+    }
+  }
 })
