@@ -16,11 +16,13 @@ export default defineNuxtConfig({
   //     apiBaseToken: 'NUXT_PUBLIC_API_BASE_TOKEN',
   //   }
   // },
-  // nitro: {
-  //   output: {
-  //     dir: '.output',
-  //     serverDir: '.output/server',
-  //     publicDir: '.output/public'
-  //   }
-  // }
+  nitro: {
+    inlineDynamicImports: true,
+    serveStatic: true,
+    // output: {
+    //   dir: '.output',
+    //   serverDir: '.output/server',
+    //   publicDir: '.output/public'
+    // }
+  }
 })
