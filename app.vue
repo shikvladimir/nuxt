@@ -6,6 +6,10 @@
     <NuxtPage />
   </div>
 </template>
-<script>
-// import 'primevue/resources/themes/lara-light-green/theme.css'
+<script setup>
+const config = useRuntimeConfig()
+console.log(config.public.apiBaseUrl)
+console.log(config.public.apiBaseToken)
+console.log(config.apiSecretPath)
+console.log(config.apiSecretKey)
 </script>

@@ -8,11 +8,19 @@ export default defineNuxtConfig({
     /* Options */
   },
   css: ['primevue/resources/themes/lara-light-green/theme.css'],
-  nitro: {
-    output: {
-      dir: '.output',
-      serverDir: '.output/server',
-      publicDir: '.output/public'
+  runtimeConfig: {
+    apiSecretPath: 'NUXT_API_SECRET_PATH',
+    apiSecretKey: 'NUXT_API_SECRET_KEY',
+    public: {
+      apiBaseUrl: 'NUXT_PUBLIC_API_BASE_URL',
+      apiBaseToken: 'NUXT_PUBLIC_API_BASE_TOKEN',
     }
-  }
+  },
+  // nitro: {
+  //   output: {
+  //     dir: '.output',
+  //     serverDir: '.output/server',
+  //     publicDir: '.output/public'
+  //   }
+  // }
 })
