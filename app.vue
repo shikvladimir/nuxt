@@ -1,15 +1,28 @@
-<template>
-  <div>
-<!--    <NuxtWelcome />-->
+<script setup>
+import Header from "./components/Header";
 
-    <the-navigation />
+const head = () => {
+  return {
+    bodyAttrs: {
+      class: 'reset-body'
+    }
+  }
+}
+</script>
+
+
+<template>
+  <div class="wrapper-w">
+    <Header />
+
+<!--    <the-navigation />-->
     <NuxtPage />
   </div>
 </template>
-<!--<script setup>-->
-<!--const config = useRuntimeConfig()-->
-<!--console.log(config.public.apiBaseUrl)-->
-<!--console.log(config.public.apiBaseToken)-->
-<!--console.log(config.apiSecretPath)-->
-<!--console.log(config.apiSecretKey)-->
-<!--</script>-->
+
+
+<style>
+.reset-body {
+  margin: 0;
+}
+</style>
