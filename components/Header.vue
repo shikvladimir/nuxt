@@ -52,6 +52,10 @@ export default {
   opacity: 50%;
   padding: 0 240px;
 
+  @media (max-width: 1400px) {
+    display: none;
+  }
+
   .menu {
     max-width: 781px;
     width: 100%;

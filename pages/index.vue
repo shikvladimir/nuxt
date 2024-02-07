@@ -1,4 +1,6 @@
 <script setup>
+import {ref, onMounted} from 'vue'
+
 import Button from "../components/Button";
 import Block1 from "../components/Block1";
 import Block2 from "../components/Block2";
@@ -8,30 +10,37 @@ import Block4 from "../components/Block4";
 import Footer from "../components/Footer";
 import Album from "../components/Album";
 import Friend from "../components/Friend";
+import Review from "../components/Review";
+import Video from "../components/Video";
 
 
-import {ref} from 'vue'
+
+import background from '/images/main.webp';
+
+
 import {computed} from "vue";
 
 import img from '/images/main.webp'
 
-// const imgUrl = ref(require("../images/main.webp"))
+onMounted(() => {
+});
 
 </script>
 <template>
   <div>
-    <img src="/images/main.webp" alt="main">
-    <!--    <img :src="imgUrl" alt="main">-->
+    <!--    <img src="/images/main.webp" alt="main">-->
+    <img :src="background" alt="main">
   </div>
   <Block1/>
   <Block2/>
   <Block3/>
-  <Shop />
+  <Shop/>
   <Block4/>
-
-  <Friend />
-  <Album />
-  <Footer />
+  <Review/>
+  <Video/>
+  <Friend/>
+  <Album/>
+  <Footer/>
 </template>
 <style scoped lang="scss">
 img {

@@ -40,6 +40,11 @@ export default {
   align-items: center;
   height: 885px;
   padding: 80px;
+  
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 24px;
+  }
 
   .data {
     max-width: 864px;
@@ -52,6 +57,11 @@ export default {
       letter-spacing: -4.5%;
       color: white;
       margin: 0;
+
+      @media (max-width: 500px) {
+        font-size: 48px;
+        line-height: 32.4px;
+      }
     }
 
     .sub-tile {

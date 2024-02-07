@@ -38,7 +38,7 @@ const props = defineProps({
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 500;
-      line-height: 46.88px;;
+      line-height: 46.88px;
       color: var(--color-black);
       margin: 0;
       width: 180px;

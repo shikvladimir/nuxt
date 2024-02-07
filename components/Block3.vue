@@ -52,7 +52,7 @@ const subList = [
 <style scoped lang="scss">
 .block {
   background-color: #B1E4ED;
-  padding: 80px;
+  padding: 70px;
 
   .title {
     font-size: 88px;
